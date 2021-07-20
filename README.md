@@ -19,7 +19,9 @@ The native libraries are not packaged with any relevant jars.  See also note in 
  * Windows: Install latest version of blosc (https://sites.imagej.net/N5/lib/win64/). Rename file to `blosc.dll` and set the JAVE_OPTS enviroment variable (example: `set JAVA_OPTS="-Djna.library.path=C:\path\to\blosc\folder"`). (Note: make sure the path is to the folder containing `blosc.dll` and not path to `blosc.dll` itself).
 
 
- * Ubuntu 18.04+: `apt-get install libblosc1`
+ * Ubuntu 18.04+: `apt-get install libblosc1`  then set the JAVE_OPTS enviroment variable (example: `echo export JAVA_OPTS='-Djna.library.path=/usr/local/Cellar/c-blosc/*/lib' >> ~/.bashrc` ). (Note: make sure the path is to the folder containing the blosc file and not path to blosc file itself).
+
+
 
 Installation
 ============
